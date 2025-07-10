@@ -15,5 +15,11 @@ class Solution:
             for _, c in enumerate(hash_columns):
                 if row == c:
                     result += 1
-
+        # just a quick note as i saw this pretty cool solution in leetcode
+        #
+        #for r in range(n):
+        #    row = tuple(grid[r])
+        #    rows[row]= 1 + rows.get(row, 0)
+        # this way we could avoid the two for loops later because we aready know how many rows are repeated
+        # then it just goes through the columns and if it exist its sums it up only, this way we know it exist and how many possibilities.
         return result
