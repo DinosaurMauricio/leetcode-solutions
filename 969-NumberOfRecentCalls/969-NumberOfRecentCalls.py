@@ -18,10 +18,11 @@ class RecentCounter:
             self.requests = self.requests[i:]
 
         return len(self.requests)
+
+        #other quick solution i made but this is of course much slower as it needs to go through all elements everytime
         #counter = 0
-#
         #self.requests.append(t)
-#
+        
         #for request in self.requests:
         #    if t - 3000 <= request <= t:
         #        counter += 1
