@@ -12,7 +12,7 @@ class Solution:
         even_head = head.next
 
         odd = head  # odd
-        even = head.next  # even
+        even = even_head  # even
 
         while odd and odd.next and even and even.next:
 
