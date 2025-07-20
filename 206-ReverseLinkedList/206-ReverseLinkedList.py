@@ -18,6 +18,14 @@ class Solution:
 
             current = start_head
 
+            # instead of this saw in leetcode
+            # i cuold literally reversed which could have been much better
+            # head.next.next = head
+            # and reduce to O(N)
+            # the other solution was iteratively with two pointers
+            # one with the previous and current and holding the next value
+            # in a temporary var
+            
             while current.next:
                 current = current.next
 
