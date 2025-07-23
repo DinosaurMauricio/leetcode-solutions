@@ -10,6 +10,13 @@ class Solution:
         if not root:
             return 0
 
+        # I overcomplicated this solution lol ¯\__[. __ .]__/¯
+        # more easy path is to instead count from bottom to top
+        # that way i wouldn't require the counters and just count
+        # within the recursive method.
+        # Note to self: Not bad for not playing around with trees in a long time lol
+        # ¯\_(ツ)_/¯
+        
         self.counter_depth = 0
         self.max_depth = 0
 
